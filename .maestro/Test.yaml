@@ -1,0 +1,7 @@
+Test.yaml
+appId: ${APPID}
+---
+- launchApp
+- scrollUntilVisible:
+    element:
+        text: "Networking How to use the Fetch API in React Native."
