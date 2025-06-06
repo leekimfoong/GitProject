@@ -1,0 +1,9 @@
+name: Build and upload to Maestro Cloud (Native iOS)
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - run: xcodebuild -exportArchive -archivePath "workcenterFD.xcarchive" -exportPath "output"
